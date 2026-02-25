@@ -1,0 +1,39 @@
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #111;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffc107 !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px 0;
+}
