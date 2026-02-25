@@ -11,7 +11,7 @@ body {
 .navbar {
     background-color: #2d6571 !important;
     box-shadow: 0 2px 10px rgba(45, 101, 113, 0.3);
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .navbar-brand {
@@ -35,23 +35,25 @@ body {
 }
 
 .navbar-logo {
-    height: 40px;
+    height: 65px;
     width: auto;
     border-radius: 50%;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0.95;
+    box-shadow: 0 2px 8px rgba(232, 191, 97, 0.4);
 }
 
 @media (max-width: 576px) {
     .navbar-logo {
-        height: 30px;
-        margin-right: 5px;
+        height: 48px;
+        margin-right: 8px;
     }
     
     .navbar-brand {
         justify-content: flex-start !important;
         margin-right: auto;
     }
+}
 }
 
 .navbar-brand:hover .navbar-logo {
