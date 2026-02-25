@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentae Events - Email Template Preview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 2px solid #2d6571;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            background: linear-gradient(135deg, #2d6571 0%, #1f4751 100%);
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        .email-header h1 {
+            margin: 0;
+            color: #e8bf61;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .email-header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .email-content {
+            padding: 30px;
+        }
+        .field-group {
+            margin-bottom: 20px;
+            border-left: 4px solid #e8bf61;
+            padding-left: 15px;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #2d6571;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+        .message-box {
+            background-color: #f0f8f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 4px solid #e8bf61;
+        }
+        .email-footer {
+            background-color: #f0f8f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e8bf61;
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #e8bf61;
+            color: #2d6571;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #d4a84d;
+        }
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #856404;
+        }
+        .note strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="note">
+    <strong>📧 Email Template Preview</strong>
+    This is how the email will look when sent to momentaeevents@gmail.com
+</div>
+
+<div class="email-container">
+    <!-- Header -->
+    <div class="email-header">
+        <h1>Momentae Events</h1>
+        <p>New Event Inquiry</p>
+    </div>
+
+    <!-- Content -->
+    <div class="email-content">
+        <p style="color: #2d6571; font-size: 1.1rem;">Hello,</p>
+        
+        <p style="color: #666;">You have received a new event inquiry from your website. Here are the details:</p>
+
+        <!-- Client Name -->
+        <div class="field-group">
+            <div class="field-label">👤 Client Name</div>
+            <div class="field-value">Raj Kumar</div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="field-group">
+            <div class="field-label">📧 Email Address</div>
+            <div class="field-value"><a href="mailto:raj@example.com" style="color: #e8bf61; text-decoration: none;">raj@example.com</a></div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="field-group">
+            <div class="field-label">📱 Phone Number</div>
+            <div class="field-value">+91 9876543210</div>
+        </div>
+
+        <!-- Event Type -->
+        <div class="field-group">
+            <div class="field-label">🎉 Event Type</div>
+            <div class="field-value">Wedding</div>
+        </div>
+
+        <!-- Message -->
+        <div class="field-group">
+            <div class="field-label">💬 Message</div>
+            <div class="field-value">
+                <div class="message-box">
+                    Hi Momentae Events,<br><br>
+                    I am interested in planning my wedding with your team. I would like to know more about your services and pricing. My wedding is planned for next year in December.<br><br>
+                    Looking forward to hearing from you.<br><br>
+                    Best regards,<br>
+                    Raj
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="mailto:raj@example.com" class="cta-button">Reply to Inquiry</a>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="email-footer">
+        <p style="margin: 0;">
+            <strong style="color: #2d6571;">Quick Response:</strong><br>
+            Reply to: raj@example.com<br>
+            <br>
+            This is an automated message from Momentae Events contact form.
+        </p>
+        <p style="margin: 15px 0 0 0; border-top: 1px solid #ddd; padding-top: 15px; color: #999;">
+            © 2026 Momentae Events | All Rights Reserved
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
