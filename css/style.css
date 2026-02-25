@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 body {
     scroll-behavior: smooth;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     color: #2d6571;
     overflow-x: hidden;
@@ -43,6 +45,12 @@ body {
 @media (max-width: 576px) {
     .navbar-logo {
         height: 30px;
+        margin-right: 5px;
+    }
+    
+    .navbar-brand {
+        justify-content: flex-start !important;
+        margin-right: auto;
     }
 }
 
@@ -467,32 +475,8 @@ img {
         display: none;
     }
 }
-}
+    
 
-.carousel-header .carousel-caption {
-    background: linear-gradient(to top, rgba(45, 101, 113, 0.8), transparent);
-    bottom: 0;
-    padding: 40px 20px 20px;
-}
-
-.carousel-header .carousel-caption h5 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #e8bf61;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: brightness(1.2);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
