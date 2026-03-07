@@ -23,6 +23,13 @@
 
 <!-- Event Carousel Header -->
 <div id="eventCarousel" class="carousel slide carousel-header" data-bs-ride="carousel" data-bs-interval="5000">
+<!-- Top bar with contact numbers -->
+<div class="top-bar">
+  <div class="container">
+    <a href="https://wa.me/9837675160" target="_blank">📞 9837675160</a>
+    <a href="https://wa.me/9219747969" target="_blank">📞 9219747969</a>
+  </div>
+</div>
 <div class="carousel-inner">
 <div class="carousel-item active">
 <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80" class="d-block w-100" alt="Wedding Events">
@@ -76,6 +83,25 @@ Momentae Events
 </div>
 </nav>
 
+<!-- AI Chatbot -->
+<div class="chatbot-container">
+  <button class="chatbot-button" onclick="toggleChat()">💬</button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">AI Chatbot</div>
+    <div class="chat-body" id="chatBody">
+      <p>Hello! How can I help you with your event planning today?</p>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating WhatsApp and Call buttons -->
+<a href="https://wa.me/9837675160" class="whatsapp-btn" target="_blank">📱</a>
+<a href="tel:9837675160" class="call-btn">📞</a>
+
 <!-- Page Header -->
 <section class="hero d-flex align-items-center" id="about" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80') center/cover no-repeat;">
 <div class="container text-center text-white">
@@ -97,9 +123,127 @@ Momentae Events
 </div>
 
 <div class="col-md-6">
-<img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" class="img-fluid rounded shadow" alt="About Momentae Events">
+<img src="https://images.unsplash.com/photo-1469078169608-067cd827ec33?w=600&q=80&blend=https://images.unsplash.com/photo-1000000000000-000000000000?w=600&q=80&blend_mode=darken" class="img-fluid rounded shadow" alt="About Momentae Events">
 </div>
 
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+<div class="container text-center">
+<h2 class="section-title text-white">Ready to Make Your Event Unforgettable?</h2>
+<p class="lead text-white">Contact us today for a free consultation and quote.</p>
+<a href="contact.html" class="btn btn-light btn-lg">Book Your Event Now</a>
+</div>
+</section>
+
+<!-- Our Services -->
+<section class="py-5 bg-light" id="services">
+<div class="container text-center">
+<h2 class="section-title">Our Services</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card service-card shadow">
+<div class="card-body">
+<i class="fa-solid fa-ring fa-3x text-warning mb-3"></i>
+<h5>Wedding Planning</h5>
+<p>Complete wedding management with luxury decor.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card service-card shadow">
+<div class="card-body">
+<i class="fa-solid fa-building fa-3x text-warning mb-3"></i>
+<h5>Corporate Events</h5>
+<p>Professional corporate meetings & conferences.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card service-card shadow">
+<div class="card-body">
+<i class="fa-solid fa-music fa-3x text-warning mb-3"></i>
+<h5>Concert Management</h5>
+<p>Stage setup, sound system & lighting management.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Our Team -->
+<section class="py-5">
+<div class="container text-center">
+<h2 class="section-title">Our Team</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card team-card shadow">
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80&blur=40" class="card-img-top" alt="Team Member">
+<div class="card-body">
+<h5>John Doe</h5>
+<p>Event Coordinator</p>
+<p class="small text-muted">10+ years of experience in event planning and coordination.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card team-card shadow">
+<img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&q=80&blur=40" class="card-img-top" alt="Team Member">
+<div class="card-body">
+<h5>Jane Smith</h5>
+<p>Wedding Planner</p>
+<p class="small text-muted">Specialist in creating memorable wedding experiences.</p>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card team-card shadow">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80&blur=40" class="card-img-top" alt="Team Member">
+<div class="card-body">
+<h5>Mike Johnson</h5>
+<p>Corporate Events Specialist</p>
+<p class="small text-muted">Expert in managing large-scale corporate events.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+<div class="container text-center">
+<h2 class="section-title">What Our Clients Say</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="testimonial-card p-4 shadow">
+<i class="fa-solid fa-quote-left fa-2x text-warning mb-3"></i>
+<p>"Momentae Events made our wedding day absolutely magical. Every detail was perfect!"</p>
+<h6 class="mt-3">- Sarah & Alex</h6>
+</div>
+</div>
+<div class="col-md-4">
+<div class="testimonial-card p-4 shadow">
+<i class="fa-solid fa-quote-left fa-2x text-warning mb-3"></i>
+<p>"Professional and efficient. Our corporate event was a huge success. Highly recommended!"</p>
+<h6 class="mt-3">- TechCorp Inc.</h6>
+</div>
+</div>
+<div class="col-md-4">
+<div class="testimonial-card p-4 shadow">
+<i class="fa-solid fa-quote-left fa-2x text-warning mb-3"></i>
+<p>"Amazing concert setup. The sound quality and lighting were absolutely top-notch."</p>
+<h6 class="mt-3">- RockFest Organizers</h6>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -163,8 +307,18 @@ Momentae Events
 </section>
 
 <!-- Footer -->
-<footer class="footer text-center">
-<p>© 2026 Momentae Events | All Rights Reserved</p>
+<footer class="footer text-center py-4">
+<div class="container">
+<p class="mb-3">© 2026 Momentae Events | All Rights Reserved</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/momentae-events-a284463b3" target="_blank" class="social-link">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://www.instagram.com/momentaeevents/" target="_blank" class="social-link">
+<i class="fa-brands fa-instagram"></i>
+</a>
+</div>
+</div>
 </footer>
 
 <!-- Bootstrap JS -->

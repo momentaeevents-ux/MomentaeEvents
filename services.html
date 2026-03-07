@@ -23,6 +23,13 @@
 
 <!-- Event Carousel Header -->
 <div id="eventCarousel" class="carousel slide carousel-header" data-bs-ride="carousel" data-bs-interval="5000">
+<!-- Top bar with contact numbers -->
+<div class="top-bar">
+  <div class="container">
+    <a href="https://wa.me/9837675160" target="_blank">📞 9837675160</a>
+    <a href="https://wa.me/9219747969" target="_blank">📞 9219747969</a>
+  </div>
+</div>
 <div class="carousel-inner">
 <div class="carousel-item active">
 <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80" class="d-block w-100" alt="Wedding Events">
@@ -75,6 +82,25 @@ Momentae Events
 </div>
 </div>
 </nav>
+
+<!-- AI Chatbot -->
+<div class="chatbot-container">
+  <button class="chatbot-button" onclick="toggleChat()">💬</button>
+  <div class="chat-modal" id="chatModal">
+    <div class="chat-header">AI Chatbot</div>
+    <div class="chat-body" id="chatBody">
+      <p>Hello! How can I help you with your event planning today?</p>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating WhatsApp and Call buttons -->
+<a href="https://wa.me/9837675160" class="whatsapp-btn" target="_blank">📱</a>
+<a href="tel:9837675160" class="call-btn">📞</a>
 
 <!-- Page Header -->
 <section class="hero d-flex align-items-center" id="services" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80') center/cover no-repeat;">
@@ -158,8 +184,18 @@ Momentae Events
 </section>
 
 <!-- Footer -->
-<footer class="footer text-center">
-<p>© 2026 Momentae Events | All Rights Reserved</p>
+<footer class="footer text-center py-4">
+<div class="container">
+<p class="mb-3">© 2026 Momentae Events | All Rights Reserved</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/momentae-events-a284463b3" target="_blank" class="social-link">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+<a href="https://www.instagram.com/momentaeevents/" target="_blank" class="social-link">
+<i class="fa-brands fa-instagram"></i>
+</a>
+</div>
+</div>
 </footer>
 
 <!-- Bootstrap JS -->
