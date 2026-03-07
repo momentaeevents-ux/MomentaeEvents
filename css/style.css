@@ -179,7 +179,7 @@ body {
 .navbar-brand {
     font-weight: bold;
     /* gradient text to look unique */
-    background: linear-gradient(45deg, #e8bf61, #ffffff);
+    /*background: linear-gradient(45deg, #e8bf61, #ffffff);*/
     /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     font-size: 1.6rem;
@@ -755,4 +755,5 @@ img {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     opacity: 1;
+
 }
